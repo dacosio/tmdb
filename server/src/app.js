@@ -9,8 +9,8 @@ const accessToken =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYjhhZTVhZjgxOGI0MTQ1ZjM0ZDQ4ZTAyNjQxNzlmOSIsInN1YiI6IjYyYjhmMTEwZTFmYWVkMGI4MTE3NzFhNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qoEG-px9xzL2SYIl3K1g8F1H4VUsjGFBpXsSRSv2-fk";
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+app.use(cors()); //to prevent cors error
+app.use(express.json()); //to parse the request
 
 // Endpoints
 app.get("/", getPopularMovies);
