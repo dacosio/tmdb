@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Week 11 - APIs</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Week 9 - APIs</h1>
+
+    <h2>Current Popular Movies</h2>
+    <div>
+      <input type="text" id="searchInput" placeholder="Search movies..." />
+      <button id="searchButton">Search</button>
+    </div>
+    <main>
+      <table id="favoriteTable">
+        <thead>
+          <tr>
+            <th>Favorite Movie Title</th>
+            <th>Release Date</th>
+            <th>Rating</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="favoriteTableBody"></tbody>
+      </table>
+
+      <table id="movieTable">
+        <thead>
+          <tr>
+            <th>Movie Title</th>
+            <th>Release Date</th>
+            <th>Rating</th>
+            <th>Select</th>
+            <th>Favorite</th>
+          </tr>
+        </thead>
+        <tbody id="movieTableBody"></tbody>
+      </table>
+      <button id="getDetails">Get Details for Selected</button>
+    </main>
+
+    <div id="movieDetails" class="detailContainer"></div>
+
+    <footer>
+      <p class="attribution">
+        &copy;TMDb - Data Source: <a href="themoviedb.org">The Movie Db</a>
+      </p>
+    </footer>
+  </body>
+</html>

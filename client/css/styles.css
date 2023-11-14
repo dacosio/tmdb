@@ -1,0 +1,112 @@
+/* General styles */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80%;
+  background: rgb(247, 224, 195);
+}
+
+h1 {
+  padding: 20px;
+  margin: 0;
+  background: burlywood;
+  max-width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+h2 {
+  padding: 20px 5px;
+  margin: 0;
+  background: wheat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Table styles */
+table {
+  flex-grow: 1;
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid burlywood;
+  background: whitesmoke;
+  font-size: larger;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: burlywood;
+  color: whitesmoke;
+}
+
+/* Favorite table styles */
+#favoriteTable {
+  margin-top: 40px;
+}
+
+#movieTableBody button,
+#favoriteTableBody button {
+  background: olive;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: medium;
+  margin: 10px auto;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+/* Button styles */
+#searchButton,
+#getDetails {
+  color: whitesmoke;
+  background: burlywood;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: larger;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* Addons */
+.movieBlock {
+  margin-top: 40px;
+}
+
+.descriptionContainer {
+  background: rgb(74, 42, 7);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  font-size: x-large;
+}
+
+.textDescription {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+input {
+  color: black;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: larger;
+  margin: 10px auto;
+}
