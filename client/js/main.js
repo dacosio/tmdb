@@ -114,11 +114,10 @@ getDetails.addEventListener("click", () => {
 
 // Process search term
 
-// Add this block at the beginning to get the search input and button
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("searchButton");
 
-// Add a click event listener to the search button
+// click event listener to the search button
 searchButton.addEventListener("click", () => {
   const searchTerm = searchInput.value.toLowerCase();
 
